@@ -1,36 +1,68 @@
-*{
-    margin: 0 auto; 
-    box-sizing: border-box; 
-    font-family: sans-serif; 
-}
-
-body{
-    background: linear-gradient(120deg, #838383d8, #dadada);); 
-    width: 100%; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column; 
-}
-
-#question{
-    font-size: 50px; 
-    width: 80%; 
-    margin-bottom: 24px; 
-    color: #000000;
-    text-shadow: 1px 1px 1px #fff; 
-    text-align: center; 
-}
-
-#choices li {
-    list-style-type: none; 
-    margin-bottom: 10px; 
-    font-size: 30px;
-    font-weight: bold; 
+ /*Estilos para o arquivo todo*/
+ *{
+    margin: 0 auto; /*sem margem*/
+    /*width: 100%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    box-sizing: border-box; /*a largura total da caixa está incluindo o preenchimento e as bordas.*/
+    font-family: sans-serif; /*tira as serifas das letras*/
+  }
+  
+  /*Estilos do corpo do projeto*/
+  body{
+    background: linear-gradient(120deg, #454545d8, #c9c9c9);); /*fundo da imangem em degrade*/
+    width: 100%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    height: 100vh; /*O valor "100vh" indica que o elemento deve ocupar toda a altura disponível no navegador, independentemente do conteúdo dentro dele.*/
+    display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
+    /*justify-content: center; /*Quando aplicada a um contêiner flexível, a propriedade justify-content: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados horizontalmente.*/
+    align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */
+    flex-direction: column; /*é usada para definir a direção de layout dos elementos dentro de um contêiner flexível. Quando aplicada a um contêiner, ela altera o fluxo dos itens de uma linha para uma coluna.*/
   }
 
+  .capa {
+    /*display: none;*/
+  }
+
+  .question-container {
+    margin-top: 2%;
+  }
+
+  .answers {
+    display: flex;
+  }
+  
+  /*Estilos para as perguntas*/
+  #question{
+    font-size: 50px; /*tamanho da fonte*/
+    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    margin-bottom: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    color: #000000;
+    text-shadow: 2px 2px 2px #fff; /*usada para adicionar uma sombra ao redor das letras do texto, criando um efeito de borda.*/
+    text-align: center; /*o texto será alinhado ao centro do elemento em relação à direção do fluxo do texto.*/
+  }
+  
+  /*Estilos das alternativas das questões*/
+  #choices li {
+    list-style-type: none; /*remove completamente qualquer tipo de marcador padrão da lista, tornando-a uma lista não ordenada ou não marcada.*/
+    margin-bottom: 30px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    font-size: 30px;
+    font-weight: bold; /*O valor bold define o estilo de fonte como negrito.*/
+    /*width: 8%;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;*/
+  }
+
+  #img {
+    width: 600px;
+    height: 400px;
+    background-image: url(Noé.jpeg);
+    background-size: cover;
+    background-color: aqua;
+    opacity: 0.6;
+  }
+  
   #nextQuestion {
+    margin-left: 50px;
+    margin-top: 30px;
     height: 50px;
     width: 180px;
     border-radius: 7px;
@@ -39,21 +71,27 @@ body{
     color: #fff;
     background: #000000;
   }
-
-.stopwatch-container {
-    display: flex; 
-    margin-top: 24px; 
-    align-items: center; 
-    justify-content: space-around; 
-    height: 120px;
-    width: 200px; 
-    background: linear-gradient(120deg,#ffffff,#000000);
-    border-radius: 3px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); 
+  
+  /*Estilos do cronômetro*/
+  .stopwatch-container {
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
+    margin-top: 24px; /*você está criando uma margem de 24 pixels acima do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */ 
+    justify-content: space-around; /*alinha os elementos horizontalmente e distribui o espaço em branco igualmente entre eles, criando margens iguais à esquerda e à direita de cada elemento.*/
+    height: 120px; /*você está instruindo o navegador a ajustar automaticamente a altura do elemento para preencher toda a altura disponível do seu contêiner*/
+    width: 200px; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    background: linear-gradient(120deg,#ffffff,#000000); /*fundo da imangem em degrade*/
+    border-radius: 3px; /*Ela define o raio de curvatura dos cantos do elemento, fazendo com que eles sejam exibidos de forma suavizada em vez de terem ângulos retos.*/
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); /*usada para adicionar uma sombra ao redor do container, criando um efeito de borda.*/
     margin-right: 1%;
-}
-
-.stopwatch-container div {
+    /*margin-bottom: 0%;*/
+    /*align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */
+  }
+  
+  .stopwatch-container div {
     height: 100px;
     width: 180px;
     display: flex;
@@ -64,18 +102,18 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 7px;
     letter-spacing: 3px;*/
-}
-
-.stopwatch-container span {
+  }
+  
+  .stopwatch-container span {
     font-weight: bold;
     font-size: 35px;
     text-align: center;
     color: #ffffff;
     -webkit-text-stroke: 1px #000000;
-}
-
-.stopwatch-container span.time {
+  }
+  
+  .stopwatch-container span.time {
     font-size: 40px;
     color: #000000;
     -webkit-text-stroke: 1px #ffffff;
-}
+  }
