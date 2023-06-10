@@ -11,7 +11,7 @@
     background: linear-gradient(120deg, #454545d8, #c9c9c9);); /*fundo da imangem em degrade*/
     width: 100%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
     height: 100vh; /*O valor "100vh" indica que o elemento deve ocupar toda a altura disponível no navegador, independentemente do conteúdo dentro dele.*/
-    display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
+    /*display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
     /*justify-content: center; /*Quando aplicada a um contêiner flexível, a propriedade justify-content: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados horizontalmente.*/
     align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */
     flex-direction: column; /*é usada para definir a direção de layout dos elementos dentro de um contêiner flexível. Quando aplicada a um contêiner, ela altera o fluxo dos itens de uma linha para uma coluna.*/
@@ -21,12 +21,45 @@
     /*display: none;*/
   }
 
+  .cover h1 {
+    font-size: 50px; /*tamanho da fonte*/
+    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    margin-top: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    color: #000000;
+    text-shadow: 2px 2px 2px #fff; /*usada para adicionar uma sombra ao redor das letras do texto, criando um efeito de borda.*/
+    text-align: center; /*o texto será alinhado ao centro do elemento em relação à direção do fluxo do texto.*/
+  }
+
+  .cover p {
+    font-size: 25px; /*tamanho da fonte*/
+    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
+    margin-top: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    color: #000000;
+    text-align: justify;
+}
+
+.cover button {
+    margin-left: 85%;
+    margin-top: 30px;
+    height: 50px;
+    width: 180px;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    background: #000000;
+}
+
   .question-container {
     margin-top: 2%;
   }
 
   .answers {
     display: flex;
+  }
+
+  #choicesAndButton {
+    flex-grow: 0.5;
   }
   
   /*Estilos para as perguntas*/
@@ -42,7 +75,8 @@
   /*Estilos das alternativas das questões*/
   #choices li {
     list-style-type: none; /*remove completamente qualquer tipo de marcador padrão da lista, tornando-a uma lista não ordenada ou não marcada.*/
-    margin-bottom: 30px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    margin-bottom: 40px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    margin-top: 50px;
     font-size: 30px;
     font-weight: bold; /*O valor bold define o estilo de fonte como negrito.*/
     /*width: 8%;
@@ -51,13 +85,21 @@
     flex-direction: column;*/
   }
 
+  .imagem img {
+    width: 580px; /* Define a largura desejada */
+    height: 430px; /* Define a altura desejada */
+    margin-left: 250px;
+    opacity: 1;
+  }
+
   #img {
-    width: 600px;
-    height: 400px;
-    background-image: url(Noé.jpeg);
+    /*width: 0px;*/
+    /*height: 100px;*/
+    /*background-image: url(Noé.jpeg);*/
     background-size: cover;
-    background-color: aqua;
-    opacity: 0.6;
+    opacity: 0.7;
+    flex-grow: 2;
+    margin-right: 10%;
   }
   
   #nextQuestion {
@@ -92,6 +134,7 @@
   }
   
   .stopwatch-container div {
+    margin-top: 10px;
     height: 100px;
     width: 180px;
     display: flex;

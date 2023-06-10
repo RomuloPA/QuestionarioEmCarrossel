@@ -70,6 +70,8 @@ var questionElement = document.getElementById("question");
 var choicesElement = document.getElementById("choices");
 var nextButton = document.getElementById("nextQuestion");
 
+
+
 function showQuestion() {
     var currentQuestion = questions[questionIndex];
     questionElement.textContent = currentQuestion.question;
@@ -79,7 +81,10 @@ function showQuestion() {
         var li = document.createElement("li");
         li.innerHTML = '<input type="radio" name="answer" value="' + currentQuestion.choices[i][0] + '"> ' + currentQuestion.choices[i];
         choicesElement.appendChild(li);
+
     }
+
+    
 }
 
 //funções do cronômetro
