@@ -26,7 +26,7 @@ var questions = [
     choices: ["A - Jonas", "B - Pedro", "C - Elias", "D - Isaías"],
     answer: "A"
   },
-  /*{
+  {
     question: "Pergunta 4: Quem foi escolhido por Deus para libertar o povo de Israel da escravidão no Egito?",
     choices: ["A - Abraão", "B - José", "C - Moisés", "D - Ezequiel"],
     answer: "C"
@@ -60,7 +60,7 @@ var questions = [
     question: "Pergunta 10: Quem foi lançado na cova dos leões por obedecer a Deus em vez de adorar outros?",
     choices: ["A - Jeremias", "B - Salomão", "C - Ezequias", "D - Daniel"],
     answer: "D"
-  },*/
+  },
 ];
 
 var questionIndex = 0;
@@ -83,9 +83,9 @@ function showQuestion() {
         choicesElement.appendChild(li);
 
     }
-
     
 }
+
 
 //funções do cronômetro
 var hh = 0;
@@ -104,15 +104,6 @@ function start() {
 function pause() {
     clearInterval(stopwatch);
 }
-
-/*function stop() {
-    clearInterval(stopwatch);
-    hours = 0;
-    minutes = 0;
-    seconds = 0;
-
-    document.getElementById('stopwatch').innerText = '00';
-}*/
 
 function timer() {
     ss++; 
@@ -165,7 +156,7 @@ function checkAnswer() {
 
   function showResult() {
     questionElement.textContent = "Você terminou o questionário!";
-    choicesElement.innerHTML = "Sua pontuação: " + score + " de " + questions.length;
+    choicesElement.innerHTML = "Você acertou: " + score + " de " + questions.length + " questões!";
     nextButton.disabled = true;
   }
 

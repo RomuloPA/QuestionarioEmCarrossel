@@ -71,6 +71,18 @@
     text-shadow: 2px 2px 2px #fff; /*usada para adicionar uma sombra ao redor das letras do texto, criando um efeito de borda.*/
     text-align: center; /*o texto será alinhado ao centro do elemento em relação à direção do fluxo do texto.*/
   }
+
+  #choices {
+    margin-bottom: 40px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    /*margin-top: 200px;*/
+    font-size: 35px;
+    font-weight: bold; /*O valor bold define o estilo de fonte como negrito.*/
+    /*text-align: center;*/
+    /*width: 8%;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;*/
+  }
   
   /*Estilos das alternativas das questões*/
   #choices li {
