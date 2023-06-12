@@ -1,39 +1,30 @@
- /*Estilos para o arquivo todo*/
- *{
-    margin: 0 auto; /*sem margem*/
-    /*width: 100%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    box-sizing: border-box; /*a largura total da caixa está incluindo o preenchimento e as bordas.*/
-    font-family: sans-serif; /*tira as serifas das letras*/
+  *{
+    margin: 0 auto; 
+    box-sizing: border-box;
+    font-family: sans-serif;
   }
   
-  /*Estilos do corpo do projeto*/
   body{
-    background: linear-gradient(120deg, #454545d8, #c9c9c9);); /*fundo da imangem em degrade*/
-    width: 100%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    height: 100vh; /*O valor "100vh" indica que o elemento deve ocupar toda a altura disponível no navegador, independentemente do conteúdo dentro dele.*/
-    /*display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
-    /*justify-content: center; /*Quando aplicada a um contêiner flexível, a propriedade justify-content: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados horizontalmente.*/
-    align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */
-    flex-direction: column; /*é usada para definir a direção de layout dos elementos dentro de um contêiner flexível. Quando aplicada a um contêiner, ela altera o fluxo dos itens de uma linha para uma coluna.*/
-  }
-
-  .capa {
-    /*display: none;*/
+    background: linear-gradient(120deg, #454545d8, #c9c9c9););
+    width: 100%; 
+    height: 100vh;
+    align-items: center;
+    flex-direction: column; 
   }
 
   .cover h1 {
-    font-size: 50px; /*tamanho da fonte*/
-    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    margin-top: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    font-size: 50px; 
+    width: 80%; 
+    margin-top: 24px;
     color: #000000;
-    text-shadow: 2px 2px 2px #fff; /*usada para adicionar uma sombra ao redor das letras do texto, criando um efeito de borda.*/
-    text-align: center; /*o texto será alinhado ao centro do elemento em relação à direção do fluxo do texto.*/
+    text-shadow: 2px 2px 2px #fff; 
+    text-align: center;
   }
 
   .cover p {
-    font-size: 25px; /*tamanho da fonte*/
-    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    margin-top: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    font-size: 25px; 
+    width: 80%;
+    margin-top: 24px;
     color: #000000;
     text-align: justify;
 }
@@ -62,52 +53,37 @@
     flex-grow: 0.5;
   }
   
-  /*Estilos para as perguntas*/
   #question{
-    font-size: 50px; /*tamanho da fonte*/
-    width: 80%; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    margin-bottom: 24px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    font-size: 50px;
+    width: 80%; 
+    margin-bottom: 24px;
     color: #000000;
-    text-shadow: 2px 2px 2px #fff; /*usada para adicionar uma sombra ao redor das letras do texto, criando um efeito de borda.*/
-    text-align: center; /*o texto será alinhado ao centro do elemento em relação à direção do fluxo do texto.*/
+    text-shadow: 2px 2px 2px #fff; 
+    text-align: center; 
   }
 
   #choices {
-    margin-bottom: 40px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
-    /*margin-top: 200px;*/
+    margin-bottom: 40px; 
     font-size: 35px;
-    font-weight: bold; /*O valor bold define o estilo de fonte como negrito.*/
-    /*text-align: center;*/
-    /*width: 8%;
-    display: flex;
-    margin: 0%;
-    flex-direction: column;*/
+    font-weight: bold; 
   }
   
-  /*Estilos das alternativas das questões*/
   #choices li {
-    list-style-type: none; /*remove completamente qualquer tipo de marcador padrão da lista, tornando-a uma lista não ordenada ou não marcada.*/
-    margin-bottom: 40px; /*você está criando uma margem de 24 pixels abaixo do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
+    list-style-type: none; 
+    margin-bottom: 40px; 
     margin-top: 50px;
     font-size: 30px;
-    font-weight: bold; /*O valor bold define o estilo de fonte como negrito.*/
-    /*width: 8%;
-    display: flex;
-    margin: 0%;
-    flex-direction: column;*/
+    font-weight: bold; 
   }
 
   .imagem img {
-    width: 580px; /* Define a largura desejada */
-    height: 430px; /* Define a altura desejada */
+    width: 580px;
+    height: 430px; 
     margin-left: 250px;
     opacity: 1;
   }
 
   #img {
-    /*width: 0px;*/
-    /*height: 100px;*/
-    /*background-image: url(Noé.jpeg);*/
     background-size: cover;
     opacity: 0.7;
     flex-grow: 2;
@@ -126,23 +102,20 @@
     background: #000000;
   }
   
-  /*Estilos do cronômetro*/
   .stopwatch-container {
     position: fixed;
     bottom: 15px;
     right: 0;
-    display: flex; /*é utilizada para definir um container como um flex container, permitindo que seus elementos internos sejam organizados de forma flexível em relação ao eixo principal.*/
-    margin-top: 24px; /*você está criando uma margem de 24 pixels acima do elemento, afetando o espaço entre ele e o próximo elemento abaixo na estrutura do documento.*/
-    align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */ 
-    justify-content: space-around; /*alinha os elementos horizontalmente e distribui o espaço em branco igualmente entre eles, criando margens iguais à esquerda e à direita de cada elemento.*/
-    height: 120px; /*você está instruindo o navegador a ajustar automaticamente a altura do elemento para preencher toda a altura disponível do seu contêiner*/
-    width: 200px; /*você está instruindo o navegador a ajustar automaticamente a largura do elemento para preencher toda a largura disponível do seu contêiner*/
-    background: linear-gradient(120deg,#ffffff,#000000); /*fundo da imangem em degrade*/
-    border-radius: 3px; /*Ela define o raio de curvatura dos cantos do elemento, fazendo com que eles sejam exibidos de forma suavizada em vez de terem ângulos retos.*/
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); /*usada para adicionar uma sombra ao redor do container, criando um efeito de borda.*/
+    display: flex;
+    margin-top: 24px; 
+    align-items: center; 
+    justify-content: space-around; 
+    height: 120px; 
+    width: 200px; 
+    background: linear-gradient(120deg,#ffffff,#000000); 
+    border-radius: 3px; 
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); 
     margin-right: 1%;
-    /*margin-bottom: 0%;*/
-    /*align-items: center; /*Quando aplicada a um contêiner flexível, a propriedade align-items: center; alinha os itens dentro desse contêiner de forma que eles sejam centralizados verticalmente. */
   }
   
   .stopwatch-container div {

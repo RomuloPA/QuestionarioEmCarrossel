@@ -9,4 +9,4 @@
 </div>
 
 ## **Sobre:** <h2>
-O projeto é uma página para a realização de uma avaliação com questionário em carrossel utilizando a biblioteca jQuery. Essa avaliação tem um tempo máximo para se encerrar, e o tempo é mostrado através de um cronômetro. Ao final da avaliação um gabarito com a correção aparecerá na página.
+O projeto é uma página para a realização de uma avaliação com questionário em carrossel utilizando a biblioteca jQuery. Essa avaliação tem um tempo máximo para se encerrar, e o tempo é mostrado através de um cronômetro. Ao final da avaliação aparecerá na página a quantidade de respostas corretas.
